@@ -2,6 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { sentryWebpackPlugin } = require("@sentry/webpack-plugin");
 
+console.log('process.env.SENTRY_AUTH_TOKEN', process.env.SENTRY_AUTH_TOKEN)
+
 module.exports = {
   entry: "./src/index.js",
   output: {
@@ -20,7 +22,7 @@ module.exports = {
       // Auth tokens can be obtained by creating an internal integration
       // at https://<organization_id>.sentry.io/settings/developer-settings/
       // and need "Release: Admin" and "Organization: Read & Write" permissions
-      authToken: process.env.SENTRY_AUTH_TOKEN,
+      authToken: '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',
 
       // Enable automatically creating releases and associating commits
       release: {
