@@ -93,7 +93,7 @@ class App extends Component {
   }
 
   checkout() {
-    // Generate an error
+    // Generate an error 111
     this.myCodeIsMorePerfect();
 
     const order = {

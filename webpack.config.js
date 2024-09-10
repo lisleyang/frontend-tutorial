@@ -8,14 +8,14 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "build"),
   },
-    devtool: "source-map",
+  devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
     }),
     sentryWebpackPlugin({
-      org: "viv-ip",
-      project: "frontend-tutorial",
+      org: "8aaee02f7eb8",
+      project: "javascript-react",
 
       // Auth tokens can be obtained by creating an internal integration
       // at https://<organization_id>.sentry.io/settings/developer-settings/
